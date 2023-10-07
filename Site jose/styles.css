@@ -1,0 +1,71 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: rgb(123, 115, 66);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /* Evita a barra de rolagem horizontal */
+}
+
+header {
+    background-color: transparent;
+    width: 100%;
+    padding: 10px 20px; /* Adicione mais espaço aos lados para os botões */
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between; /* Alinha os itens à esquerda e à direita */
+}
+
+.navbar {
+    background-color: transparent; /* Cor de fundo do Navbar */
+    width: 100%;
+}
+
+.navbar-brand img {
+    height: 80px;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Move os itens da navbar para a direita */
+}
+
+.navbar-nav .nav-link {
+    color: rgb(123, 115, 66);
+    margin: 0 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f9f9f9; /* Cor ao passar o mouse */
+}
+
+/* Estilos para o vídeo responsivo */
+video {
+    width: 85%;
+    height: auto;
+    max-width: 100%; /* Garante que o vídeo não ultrapasse a largura da tela */
+}
+/* Adicione estas regras para estilizar o menu de navegação quando pequeno (dispositivos móveis) */
+@media (max-width: 991.98px) {
+    .navbar-toggler-icon {
+        background-color: rgb(181, 177, 157); /* Cor de fundo do ícone do botão de menu */
+        
+    }
+
+    .navbar-nav {
+        background-color: black; /* Cor de fundo do menu de navegação */
+    }
+
+    .navbar-nav .nav-link {
+        color: rgb(123, 115, 66); /* Cor do texto dos itens do menu quando o fundo é dourado */
+    }
+}
+/* No seu arquivo styles.css */
